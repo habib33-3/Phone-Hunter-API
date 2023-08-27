@@ -19,7 +19,20 @@
       <h2 class="text-6xl">Phone Hunter</h2>
     </header>
 
-    <main>
+    <main class="container mx-auto m-8 p-4">
+      <!-- search input -->
+      <section class="bg-gray-100 p-4 m-4">
+        <input
+          id="search-field"
+          type="text"
+          placeholder="Search ......"
+          class="input input-bordered w-full max-w-xs"
+        />
+
+        <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+      </section>
+
+      <!-- search result -->
       <section>
         <!-- phone section starts -->
         <div
