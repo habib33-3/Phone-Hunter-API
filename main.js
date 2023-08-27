@@ -13,17 +13,17 @@ const displayPhones = (phones) => {
   phones.forEach((phone) => {
     // create a  div
     const phoneCard = document.createElement("div");
-    phoneCard.classList = `card w-96 bg-base-100 shadow-xl`;
+    phoneCard.classList = `card w-96 bg-gray-100 shadow-xl mt-10 p-3`;
     phoneCard.innerHTML = `
     <figure>
     <img
       src="${phone.image}"
       alt="Shoes"
     />
-  </figure>
+  </figure> 
 
   <div class="card-body">
-    <h2 class="card-title">Shoes!</h2>
+    <h2 class="card-title">${phone.phone_name}</h2>
 
     <p>If a dog chews shoes whose shoes does he choose?</p>
 
